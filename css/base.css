@@ -1,0 +1,80 @@
+@import url(../css/fonts.css);
+
+html,
+body {
+  height: 100%;
+  font-family: "Work Sans";
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main_head {
+  text-align: center;
+  max-width: 786px;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.main_head__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main_head__title:has(+ .main_head__descr) {
+  margin-bottom: 20px;
+}
+
+.main_head__descr {
+  display: block;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.section.section--color_2 {
+  background: #f6f8f7;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  min-height: 300px;
+}
+
+.container__info,
+.container__descr {
+  padding: 30px 0;
+}
+
+.container.container--width_1 {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.container.container--width_2 {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container.container--width_3 {
+  max-width: 680px;
+  width: 100%;
+}
+
