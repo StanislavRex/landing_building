@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -39,7 +43,33 @@
       <main class="main">
         <section class="section section--img">
           <div class="container">
-            <h1 class="text__descr">Building things is our mission</h1>
+            <h1 class="text__descr">Building things is our mission.</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h4 class="swiper-slide_title">Feature Projects</h4>
+                  <p class="swiper-slide_descr">
+                    The National University of Architecture
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h4 class="swiper-slide_title">Feature Projects</h4>
+                  <p class="swiper-slide_descr">
+                    Slide 2
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <h4 class="swiper-slide_title">Feature Projects</h4>
+                  <p class="swiper-slide_descr">
+                   Slide 3
+                  </p>
+                </div>
+              </div>
+              <div class="navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
           </div>
         </section>
         <section class="section">
@@ -288,5 +318,6 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
