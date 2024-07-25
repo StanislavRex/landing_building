@@ -226,6 +226,15 @@
   font-weight: 600;
 }
 
+.contact {
+  background: url(../images/contact_img.jpg) no-repeat center center;
+  background-size: cover;
+
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .help__form {
   display: flex;
   text-align: center;
@@ -306,3 +315,4 @@
 .help__btn:hover {
   opacity: 0.85;
 }
+
