@@ -42,16 +42,16 @@ const notify = require('gulp-notify');
 
 const paths = {
     styles: {
-        src: 'src/scss/**/*.scss',
-        dest: 'dist/css'
+        src: 'scss/**/*.scss',
+        dest: 'css'
     },
     scripts: {
-        src: 'src/js/**/*.js',
-        dest: 'dist/js'
+        src: 'js/**/*.js',
+        dest: 'js'
     },
     images: {
-        src: 'src/images/**/*',
-        dest: 'dist/images'
+        src: 'images/**/*',
+        dest: 'images'
     },
     html: {
         src: './*.html'
@@ -65,7 +65,7 @@ function styles() {
         .pipe(sass())
         .pipe(cleanCSS())
         .pipe(rename({
-            basename: 'main',
+            basename: 'style',
             suffix: '.min'
         }))
         .pipe(gulp.dest(paths.styles.dest))
@@ -96,7 +96,8 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: './'
-        }
+        },
+        startPath: '/landing.html' // Додайте цю лінію, щоб вказати стартову сторінку
     });
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);
@@ -113,4 +114,5 @@ exports.watch = watch;
 exports.build = build;
 
 gulp.task('default', build);
+
 
