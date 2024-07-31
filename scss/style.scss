@@ -1,6 +1,8 @@
 @import url(../css/reset.css);
 @import url(../css/fonts.css);
-@import 'header';
 @import 'variables';
+@import '../helpers/breakpoints';
+@import '../helpers/extends';
+@import 'header';
 @import 'base';
 @import 'hero';

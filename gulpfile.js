@@ -58,7 +58,7 @@ const paths = {
     }
 };
 
-// Compile SCSS into CSS
+
 function styles() {
     return gulp.src(paths.styles.src)
         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
@@ -72,7 +72,6 @@ function styles() {
         .pipe(browserSync.stream());
 }
 
-// Minify JavaScript
 function scripts() {
     return gulp.src(paths.scripts.src)
         .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
@@ -84,20 +83,20 @@ function scripts() {
         .pipe(browserSync.stream());
 }
 
-// Optimize Images
+
 function images() {
     return gulp.src(paths.images.src)
         .pipe(imagemin())
         .pipe(gulp.dest(paths.images.dest));
 }
 
-// Watch files for changes
+
 function watch() {
     browserSync.init({
         server: {
             baseDir: './'
         },
-        startPath: '/landing.html' // Додайте цю лінію, щоб вказати стартову сторінку
+        startPath: '/landing.html' 
     });
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);

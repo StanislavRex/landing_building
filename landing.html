@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="home">
         <div class="container header__in">
           <div class="logo">
             <img class="logo__img" src="./images/symbols.png" alt="#" />
@@ -21,19 +21,19 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
+                <a href="#home" class="menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">About us</a>
+                <a href="#about" class="menu__link">About us</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Projects</a>
+                <a href="#project" class="menu__link">Projects</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Services</a>
+                <a href="#service" class="menu__link">Services</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Contact us</a>
+                <a href="contact" class="menu__link">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -43,42 +43,6 @@
         <section class="section hero">
           <div class="container hero__in">
             <h1 class="hero__title">Building things is our mission.</h1>
-            <!-- <div class="hero__slider_w">
-              <div class="hero_slider swiper heroSlider">
-                <div class="hero_slider__in swiper-wrapper">
-                  <div class="hero_slider__item swiper-slide">
-                    <h4 class="hero_slider__title">Feature Projects</h4>
-                    <div class="hero_slider__descr">
-                      The National University of Architecture
-                    </div>
-                  </div>
-                  <div class="hero_slider__item swiper-slide">
-                    <h4 class="hero_slider__title">Feature Projects</h4>
-                    <div class="hero_slider__descr">
-                      The National University of Trade and Economics
-                    </div>
-                  </div>
-                  <div class="hero_slider__item swiper-slide">
-                    <h4 class="hero_slider__title">Feature Projects</h4>
-                    <div class="hero_slider__descr">
-                      The National University of Culture
-                    </div>
-                  </div>
-                </div>
-                <nav class="hero_slider__nav">
-                  <div
-                    class="hero_slider__btn hero_slider__btn--prev heroSliderPrev"
-                  >
-                    <span> Back </span>
-                  </div>
-                  <div
-                    class="hero_slider__btn hero_slider__btn--next heroSliderNext"
-                  >
-                    <span> Next </span>
-                  </div>
-                </nav>
-              </div>
-            </div> -->
           </div>
           <div class="hero__slider_w">
             <div class="hero_slider swiper heroSlider">
@@ -117,7 +81,7 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" id="reputation">
           <div class="container container--width_1">
             <div class="main_head">
               <h2 class="main_head__title">Our Reputation</h2>
@@ -169,13 +133,58 @@
                 </div>
               </div>
             </div>
-            <br />
-            <div class="container__descr">
-              <h2>About us</h2>
+          </div>
+        </section>
+        <section class="section" id="about">
+          <div class="container">
+            <div class="about">
+              <div class="about__media_w">
+                <div class="about__media">
+                  <picture>
+                    <source
+                      media="(min-width: 650px)"
+                      srcset="
+                      https://images.unsplash.com/photo-1722021243434-da8f28be9e82?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                      "
+                    />
+                    <source
+                      media="(min-width: 465px)"
+                      srcset="
+                      https://images.unsplash.com/photo-1721989715437-1661b4e3511c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                      "
+                    />
+                    <img
+                      src="./images/about.png"
+                      alt=""
+                      class="about__media_img"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="about__info_w">
+                <div class="about__info">
+                  <h2 class="about__info_title">About us</h2>
+                  <div class="about__info_descr">
+                    <p>
+                      For more than 30 years we have been delivering world-class
+                      construction and we’ve built many lasting relationships
+                      along the way.
+                    </p>
+                    <p>
+                      We’ve matured into an industry leader and trusted resource
+                      for those seeking quality, innovation and reliability when
+                      building in the U.S.
+                    </p>
+                  </div>
+                  <div class="about__info_btn">
+                    <a href="" class="btn_white_1">More on Our History</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="section section--color_2">
+        <section class="section section--color_2" id="service">
           <div class="container container--width_2">
             <div class="main_head">
               <h2 class="main_head__title">Services</h2>
@@ -304,7 +313,7 @@
             <a href="#" class="contact__btn">Get your consultation</a>
           </div>
         </section>
-        <section class="section projects">
+        <section class="section projects" id="project">
           <div class="container projects__in">
             <h1 class="main_title">Projects</h1>
             <div class="tabs_box">

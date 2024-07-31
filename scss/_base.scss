@@ -7,6 +7,7 @@ body {
   height: 100%;
   font-family: $font_1;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -34,10 +35,14 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 126rem;
   width: 100%;
   padding: 0 3rem;
   margin: 0 auto;
+
+  &.container--width_1 {
+    max-width: 108rem;
+  }
 
   &.container--width_2 {
     max-width: 100rem;
