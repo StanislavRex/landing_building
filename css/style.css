@@ -43,6 +43,28 @@
   border-radius: 2px;
 }
 
+.orange_btn_1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #F9995D;
+  transition: 0.3s ease;
+  border: 1px solid #fff;
+}
+.orange_btn_1:hover, .orange_btn_1:focus {
+  text-decoration: none;
+}
+.orange_btn_1:hover {
+  background-color: #fff;
+  color: #F9995D;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -50,7 +72,6 @@
   left: 0;
   width: 100%;
   height: 8rem;
-  align-items: center;
 }
 
 .header__in {
@@ -458,7 +479,7 @@ body {
   font-weight: 600;
 }
 
-.contact {
+.consultation {
   background: url(../images/kitchen.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -468,7 +489,7 @@ body {
   color: #fff;
   position: relative;
 }
-.contact::before {
+.consultation::before {
   content: "";
   position: absolute;
   top: 0;
@@ -479,7 +500,7 @@ body {
   pointer-events: none;
 }
 
-.contact__in {
+.consultation__in {
   position: relative;
   flex-grow: 1;
   display: flex;
@@ -489,7 +510,7 @@ body {
   padding-right: 6rem;
 }
 
-.contact__info {
+.consultation__info {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -511,7 +532,7 @@ body {
   color: #fff;
 }
 
-.contact__btn {
+.consultation__btn {
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -530,7 +551,7 @@ body {
   cursor: pointer;
 }
 
-.contact__btn:hover {
+.consultation__btn:hover {
   background-color: white;
   color: black;
 }
@@ -543,7 +564,7 @@ body {
   text-align: left;
 }
 
-ul li {
+.tabs__list li {
   padding-left: 16px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -757,7 +778,7 @@ li.active {
 .help__input,
 .help__textarea,
 .help__select {
-  border: 1rem solid #e0e3eb;
+  border: 1px solid #e0e3eb;
   font-size: 1.4rem;
   padding: 0.8rem;
 }
@@ -772,7 +793,7 @@ li.active {
   display: block;
   appearance: none;
   cursor: pointer;
-  background: url(../images/dropdown.svg) #fff no-repeat right 8rem center;
+  background: url(../images/dropdown.svg) #fff no-repeat center right 6px;
   font-size: 1.8rem;
   color: #a3aac2;
 }
@@ -784,6 +805,8 @@ li.active {
 .help__alarm {
   display: flex;
   width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.16;
   margin-bottom: 1rem;
 }
 
@@ -812,6 +835,121 @@ li.active {
 
 .help__btn:hover {
   opacity: 0.85;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__in {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.contact__info p {
+  font-size: 2rem;
+  line-height: 1.16;
+}
+
+.contact__info strong {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #2947a9;
+}
+
+.contact__logo {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.newsletter label {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #2947a9;
+}
+
+.newsletter__input {
+  display: flex;
+  margin-top: 5px;
+  gap: 1rem;
+}
+
+.newsletter__input input {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.16;
+  padding: 10px;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
+  min-width: 28rem;
+  width: 100%;
+}
+
+.orange_btn_1 {
+  min-width: 13.6rem;
+  height: 4rem;
+  padding: 1.6rem 2rem;
+  line-height: 2.1rem;
+  font-size: 1.8rem;
+  border-radius: 4px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.16;
+  color: #2947a9;
+}
+
+.social__icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social__icons a {
+  margin-right: 10px;
+}
+
+.social__icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  background: #2947a9;
+}
+
+.footer__in {
+  font-size: 1.6rem;
+  line-height: 1.16;
+  text-align: left;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

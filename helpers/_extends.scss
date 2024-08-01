@@ -95,3 +95,29 @@
 	border-radius: 2px;
 }
 
+// %btn_size_2 {
+// 	min-width: 13.6rem;
+// 	height: 4rem;
+// 	padding: 1.6rem 2rem;
+
+// 	line-height: 2.1rem;
+// 	font-size: 1.8rem;
+
+// 	border-radius: 4px;
+// }
+
+
+%orange_btn_1 {
+	@include st_btn;
+
+	font-weight: 600;
+	color:$color_white;
+	background-color: #F9995D;
+	transition: $transition_dur ease;
+	border: 1px solid $color_white;
+
+	&:hover {
+		background-color: $color_white;
+		color: #F9995D;
+	}
+}

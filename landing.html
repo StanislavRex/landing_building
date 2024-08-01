@@ -299,9 +299,9 @@
             </div>
           </div>
         </section>
-        <section class="section contact">
-          <div class="container contact__in">
-            <div class="contact__info">
+        <section class="section consultation">
+          <div class="container consultation__in">
+            <div class="consultation__info">
               <h2 class="info__title">
                 Free consultation with exceptional quality
               </h2>
@@ -310,7 +310,7 @@
                 <a href="tel:+8411022703" class="phone__link">+84 1102 2703</a>
               </p>
             </div>
-            <a href="#" class="contact__btn">Get your consultation</a>
+            <a href="#" class="consultation__btn">Get your consultation</a>
           </div>
         </section>
         <section class="section projects" id="project">
@@ -318,7 +318,7 @@
             <h1 class="main_title">Projects</h1>
             <div class="tabs_box">
               <div class="tabs__title title">
-                <ul>
+                <ul class="tabs__list" >
                   <li class="active" data-tab="tab_1" class="tabs__menu">
                     Residential
                   </li>
@@ -539,9 +539,90 @@
             </div>
           </div>
         </section>
+        <section class="section section--color_2">
+          <div class="container container--width_3">
+            <div class="main_head">
+              <h2 class="main_head__title">What can us do for you?</h2>
+              <div class="main_head__descr">
+                We are ready to work on a project of any complexity, whether
+                it’s commercial or residential.
+              </div>
+            </div>
+            <div class="help">
+              <form action="" class="help__form">
+                <input
+                  placeholder="Your Name *"
+                  type="text"
+                  class="help__input"
+                  required
+                />
+                <input
+                  placeholder="Email *"
+                  type="email"
+                  class="help__input"
+                  required
+                />
+                <select class="help__select" required>          
+                  <option disabled selected hidden value="">Reason for Contacting *</option>
+                  <option class="help__opt" value="">1</option>
+                  <option class="help__opt" value="">2</option>
+                  <option class="help__opt" value="">3</option>
+                </select>
+                <input placeholder="Phone" type="text" class="help__input" />
+                <textarea
+                  class="help__textarea"
+                  placeholder="Message"
+                  name=""
+                  id=""
+                ></textarea>
+                <p class="help__alarm">
+                  <span class="help__star">*</span> indicates a required field
+                </p>
+                <button class="help__btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="section contact">
+          <div class="container contact__in">
+            <div class="contact__info_w">
+              <div class="contact__info" id="contact">
+                  <p><strong>ADDRESS:</strong> 6391 Elgin St. Celina, Delaware 10299</p>
+                  <p><strong>PHONE:</strong> +84 1102 2703</p>
+                  <p><strong>EMAIL:</strong> hello@thebox.com</p>
+                  <div class="contact__logo">
+                    <img src="./images/logo.png" alt="TheBox logo">
+                </div>
+              </div>
+              <!-- <div class="contact__logo">
+                  <img src="./images/logo.png" alt="TheBox logo">
+              </div> -->
+          </div>
+        
+          <div class="contact__media">
+              <div class="newsletter">
+                  <label for="newsletter"><strong>NEWSLETTER:</strong></label>
+                  <div class="newsletter__input">
+                      <input type="email" id="newsletter" placeholder="Your email here">
+                      <button type="button" class="orange_btn_1">Subscribe</button>
+                  </div>
+              </div>
+              <div class="social">
+                  <p><strong>SOCIAL:</strong></p>
+                  <div class="social__icons">
+                      <a href="#"><img src="./images/akar-icons_facebook-fill.png" alt="Facebook"></a>
+                      <a href="#"><img src="./images/entypo-social_linkedin-with-circle.png" alt="LinkedIn"></a>
+                      <a href="#"><img src="./images/entypo-social_twitter-with-circle.png" alt="Twitter"></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container">footer</div>
+        <div class="container footer__in">
+          <p>TheBox Company © 2022. All Rights Reserved</p>
+        </div>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
