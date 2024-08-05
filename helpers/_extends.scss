@@ -121,3 +121,28 @@
 		color: #F9995D;
 	}
 }
+
+%blue_btn_1 {
+	@include st_btn;
+
+	font-weight: 600;
+	color: $color_white;
+	background-color: $color_accent;
+	transition: $transition_dur ease;
+	border: 1px solid $color_accent;
+
+	&:hover {
+		background-color: $color_white;
+		color: $color_accent;
+	}
+}
+
+%btn_size_2 {
+font-size: 1.8rem;
+line-height: 1.16;
+text-align: center;
+min-width: 17.6rem;
+height: 5.4rem;
+padding: 1.6rem 2rem;
+border-radius: 2px;
+}
