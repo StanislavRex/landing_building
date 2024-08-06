@@ -44,3 +44,11 @@ tabsNavAll.forEach(function(item){
         document.querySelector('#' + event.target.dataset.tab).classList.add('active');
     })
 })
+
+const menuButton = document.querySelector(".menu__btn");
+const menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", () => {
+  menuButton.classList.toggle("open");
+  menu.classList.toggle("active");
+});
