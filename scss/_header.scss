@@ -1,9 +1,10 @@
 .header {
   display: flex;
-  position: relative;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
   height: 8rem;
 }
 
@@ -154,10 +155,10 @@
     position: fixed;
     z-index: 998;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $color_white;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
     display: flex;
     transform: translateX(-100%);
     opacity: 0;
@@ -165,6 +166,7 @@
     pointer-events: none;
     transition: all 0.3s ease-in-out;
     overflow: auto;
+    border-radius: 20px;
   }
 }
 
