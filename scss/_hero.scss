@@ -34,7 +34,9 @@
 
 .hero__slider_w {
   display: flex;
-  justify-content: flex-end;
+  @include bp($point_4, min) {
+    justify-content: flex-end;
+  }
   @include bp($point_5) {
     justify-content: center;
   }
@@ -141,7 +143,9 @@
 .reputation {
   display: flex;
   margin-bottom: 5rem;
-  margin-right: -6.6rem;
+  @include bp($point_4, min) {
+    margin-right: -6.6rem;
+  }
   @include bp($point_5) {
     flex-direction: column;
     gap: 3rem;
@@ -161,8 +165,10 @@
 }
 
 .reputation__item_w {
-  width: calc(100% / 3);
-  padding-right: 6.6rem;
+  @include bp($point_4, min) {
+    width: calc(100% / 3);
+    padding-right: 6.6rem;
+  }
   @include bp($point_5) {
     width: 100%;
     padding-right: 0;
@@ -200,13 +206,23 @@
 .about {
   display: flex;
   align-items: center;
+  @include bp($point_5) {
+    flex-direction: column;
+  }
 }
 
 .about__media_w {
-  width: 74%;
+  @include bp($point_4, min) {
+    width: 74%;
+  }
   border-radius: 2px;
   box-shadow: 0px 8px 8px -4px rgba(17, 24, 39, 0.04),
     0px 20px 24px -4px rgba(17, 24, 39, 0.1);
+  @include bp($point_5) {
+    width: 100%;
+    display: flex;
+    order: 1;
+  }
 }
 
 .about__media {
@@ -220,7 +236,12 @@
 }
 
 .about__info_w {
-  margin-left: -14%;
+  @include bp($point_4, min) {
+    margin-left: -14%;
+  }
+  @include bp($point_5) {
+    margin-left: 0;
+  }
 }
 
 .about__info {
@@ -268,17 +289,31 @@
 .service {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 9.8rem;
   row-gap: 5rem;
+  align-items: center;
+  @include bp($point_4, min) {
+    column-gap: 9.8rem;
+  }
+  @include bp($point_5) {
+    column-gap: 4.9rem;
+    justify-content: center;
+  }
 }
 
 .service__item {
   text-align: center;
   border: 0.1rem solid #e0e3eb;
-  width: calc((100% - 2 * 9.8rem) / 3);
   min-height: 18.2rem;
   padding: 2rem;
   box-shadow: 0rem 0rem 3.7rem -0.2rem #1118270d;
+  @include bp($point_4, min) {
+    padding: 2rem;
+    width: calc((100% - 2 * 9.8rem) / 3);
+  }
+  @include bp($point_5) {
+    padding: 2rem 1.6rem;
+    width: calc((100% - 2 * 4.9rem) / 2);
+  }
 }
 
 .service__item:nth-of-type(even) {
@@ -288,9 +323,15 @@
 
 .service__img_w {
   display: flex;
-  width: 4rem;
-  height: 4rem;
   margin: 0 auto 1.8rem;
+  @include bp($point_4, min) {
+    width: 4rem;
+    height: 4rem;
+  }
+  @include bp($point_5) {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .service__img {
@@ -306,21 +347,37 @@
 
 .service__title {
   margin-bottom: 1.8rem;
-  font-size: 2rem;
   font-weight: 600;
+  @include bp($point_4, min) {
+    font-size: 2rem;
+  }
+  @include bp($point_5) {
+    font-size: 1.6rem;
+  }
 }
 
 .container__exp {
   max-width: 108rem;
   display: flex;
-  column-gap: 15.2rem;
   align-items: center;
+  @include bp($point_4, min) {
+    column-gap: 15.2rem;
+  }
+  @include bp($point_5) {
+    flex-direction: column;
+  }
 }
 
 .experience__info {
   max-width: 58rem;
   width: 100%;
-  height: 50.2rem;
+
+  @include bp($point_4, min) {
+    height: 50.2rem;
+  }
+  @include bp($point_5) {
+    margin-bottom: 2rem;
+  }
 }
 
 .info {
@@ -331,13 +388,18 @@
   border: 1px solid #fff;
   box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.0509803922),
     0px 12px 16px -4px rgba(17, 24, 39, 0.1019607843);
+  @include bp($point_5) {
+    margin-bottom: 2rem;
+  }
 }
 
 .info.info__1 {
   max-width: 28rem;
   position: relative;
-  left: 52%;
-  z-index: 1;
+  @include bp($point_4, min) {
+    left: 52%;
+    z-index: 1;
+  }
 }
 
 .info.info__1::after {
@@ -353,9 +415,11 @@
 .info.info__2 {
   max-width: 36.1rem;
   position: relative;
-  left: -5%;
-  top: -17%;
-  z-index: -1;
+  @include bp($point_4, min) {
+    left: -5%;
+    top: -17%;
+    z-index: -1;
+  }
 }
 
 .info.info__2::after {
@@ -371,9 +435,11 @@
 .info.info__3 {
   max-width: 27.6rem;
   position: relative;
-  top: -22%;
-  left: 45%;
-  z-index: 1;
+  @include bp($point_4, min) {
+    top: -22%;
+    left: 45%;
+    z-index: 1;
+  }
 }
 
 .info.info__3::after {
@@ -389,9 +455,11 @@
 .info.info__4 {
   max-width: 33.3rem;
   position: relative;
-  left: 8%;
-  top: -39%;
-  z-index: -1;
+  @include bp($point_4, min) {
+    left: 8%;
+    top: -39%;
+    z-index: -1;
+  }
 }
 
 .info.info__4::after {
@@ -482,17 +550,26 @@
 .consultation__in {
   position: relative;
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 6rem;
+  @include bp($point_4, min) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6rem;
+  }
+  @include bp($point_5) {
+    display: block;
+    padding: 2rem;
+  }
 }
 
 .consultation__info {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
+  @include bp($point_5) {
+    margin-bottom: 3rem;
+  }
 }
 
 .info__title {
@@ -568,6 +645,13 @@ li.active {
   justify-content: space-between;
   column-gap: 80px;
   margin-right: -32px;
+  @include bp($point_4, min) {
+    column-gap: 80px;
+    margin-right: -32px;
+  }
+  @include bp($point_5) {
+    flex-direction: column;
+  }
 }
 
 .tabs__content {
@@ -664,20 +748,18 @@ li.active {
   line-height: 2rem;
 }
 
-.swiper-nav__leftbtn {
-  padding-left: 4rem;
-}
+// .swiper-nav__leftbtn {
+//   padding-left: 4rem;
+// }
 
-.swiper-nav__rightbtn {
-  padding-right: 4rem;
-}
+// .swiper-nav__rightbtn {
+//   padding-right: 4rem;
+// }
 
-.swiper-nav__leftbtn::after {
+.swiper-nav__leftbtn::before {
   content: "";
-  position: absolute;
   background: url("../images/after.png");
-  top: 36%;
-  left: 9.45rem;
+  margin: 0.5rem;
   width: 2.6rem;
   height: 1.7rem;
   transform: rotate(180deg);
@@ -686,10 +768,8 @@ li.active {
 
 .swiper-nav__rightbtn::after {
   content: "";
-  position: absolute;
   background: url("../images/after.png");
-  top: 36%;
-  right: 9.45rem;
+  margin: 0.5rem;
   width: 2.6rem;
   height: 1.7rem;
   display: flex;
@@ -825,6 +905,10 @@ li.active {
 .contact__in {
   display: flex;
   justify-content: space-between;
+  @include bp($point_5) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .contact__info {
@@ -868,6 +952,9 @@ li.active {
   display: flex;
   margin-top: 5px;
   gap: 1rem;
+  @include bp($point_5) {
+    flex-direction: column;
+  }
 }
 
 .newsletter__input input {

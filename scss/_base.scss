@@ -24,6 +24,9 @@ body {
 .section {
   width: 100%;
   padding: 10rem 0;
+  @include bp($point_5) {
+    overflow: hidden;
+  }
 
   &.section--padding {
     padding: 6rem 0;
@@ -31,14 +34,19 @@ body {
 }
 
 .section--color_2 {
-	background: #f6f8f7;
+  background: #f6f8f7;
 }
 
 .container {
   max-width: 126rem;
   width: 100%;
-  padding: 0 3rem;
   margin: 0 auto;
+  @include bp($point_4, min) {
+    padding: 0 3rem;
+  }
+  @include bp($point_5) {
+    padding: 0;
+  }
 
   &.container--width_1 {
     max-width: 108rem;
